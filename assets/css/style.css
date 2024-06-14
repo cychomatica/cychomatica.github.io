@@ -21,6 +21,9 @@
    * colors
    */
 
+  /* border radius */
+  --avatar-border-radius: 15px;
+
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
@@ -337,7 +340,11 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: var(--avatar-border-radius);
+}
+
+.avatar-img {
+  border-radius: var(--avatar-border-radius);
 }
 
 .info-content .name {
