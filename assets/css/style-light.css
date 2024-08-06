@@ -328,7 +328,7 @@ main {
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
-  transition: var(--transition-2);
+  /* transition: var(--transition-2); */
 }
 
 .sidebar.active { max-height: 405px; }
@@ -383,6 +383,7 @@ main {
 .theme-btn::before {
   position: absolute;
   inset: 0px;
+  color: var(--dark-gray);
   border-radius: inherit;
   transition: var(--transition-1);
   z-index: -1;
@@ -393,7 +394,6 @@ main {
 
 .theme-btn:hover::before,
 .theme-btn:focus::before { color: var(--orange-yellow-crayola); }
-
 
 /* .info_more-btn {
   position: absolute;
@@ -1368,9 +1368,14 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
+  
+  .theme-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    padding: 15px 15px;
+  }
+  
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1475,9 +1480,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info-content .title { padding: 5px 18px; }
   
   .theme-btn {
+    position: absolute;
     top: -30px;
     right: -30px;
-    padding: 10px 15px;
+    padding: 15px 15px;
   }
 
   /* .theme-btn ion-icon { display: none; } */
@@ -1696,6 +1702,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar, article { width: 700px; }
 
+  .theme-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    padding: 15px 15px;
+  }
+
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
 
@@ -1817,7 +1830,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     box-shadow: var(--shadow-5);
   }
 
-
+  .theme-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    padding: 15px 15px;
+  }
 
   /**
    * MAIN 
@@ -1938,7 +1956,12 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article { width: auto; }
-
+  .theme-btn {
+    position: absolute;
+    top: -60px;
+    right: -30px;
+    padding: 15px 15px;
+  }
   article { min-height: 100%; }
 
 
