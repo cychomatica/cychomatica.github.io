@@ -23,7 +23,7 @@
   <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" id="page-theme" href="./assets/css/style-light.css">
 
   <!--
     - google font link
@@ -45,7 +45,7 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar active" data-sidebar>
 
       <div class="sidebar-info">
 
@@ -55,13 +55,16 @@
 
         <div class="info-content">
           <h1 class="name" title="Shutong Wu">Shutong Wu</h1>
-          <p class="title">hasta ver la luz</p>
+          <!-- <p class="title">hasta ver la luz</p> -->
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
+        <!-- <button class="info_more-btn" data-sidebar-btn>
           <span>Show More Info</span>
-
           <ion-icon name="chevron-down"></ion-icon>
+        </button> -->
+
+        <button class="theme-btn" data-theme-btn>
+          <ion-icon name="moon-outline"></ion-icon>
         </button>
 
       </div>
@@ -153,21 +156,12 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Experience</button>
           </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Publication</button>
           </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Gallery</button>
-          </li> -->
-
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -194,21 +188,18 @@
         <section class="about-text">
           <p>
             I am Shutong Wu (吴枢同), a first-year Ph.D. student at University of Wisconsin-Madison.
-            In March 2023, I got my degree of M.Eng. at Institute of Image Processing and Pattern
-            Recognition, Shanghai Jiao Tong University, advised by Prof. Jie Yang and Prof. Xiaolin Huang. In June 2020, I got my degree of B.Eng. at Department of Automation, Tsinghua University, advised by Prof.
+            In March 2023, I got my degree of M.S. at Shanghai Jiao Tong University, working with Prof. Jie Yang and Prof. Xiaolin Huang. In June 2020, I got my degree of B.S. at Tsinghua University, working with Prof.
             Danya Yao. 
           </p>
 
           <p>
-            My research interests lie in the intersections between theoretical analysis and practical applications. At present, specifically, I'm interested in trustworthy machine learning and multimodal models.
+            My research interests cover various topics of machine learning, including representation learning, trustworthy machine learning, and the efficiency of multimodal generative models.
           </p>
 
           <p>
             I enjoy taking pictures with 35mm & 120 films. My film cameras: <strike>Canon A-1</strike>, <strike>Canon New F-1</strike>, <strike>Contax TVS</strike>, <strike>Hasselblad 500cm</strike>, and Leica M4.
           </p>
-          <!-- <p>
 
-          </p> -->
         </section>
 
 
@@ -496,20 +487,20 @@
 
 
       <!--
-        - #RESUME
+        - #experience
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="experience" data-page="experience">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Experience</h2>
         </header>
 
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -521,7 +512,7 @@
 
               <h4 class="h4 timeline-item-title">Ph.D.</h4>
 
-              <span>September 2023 — Now</span>
+              <span>September 2023 — Present</span>
 
               <p class="timeline-text">
                 Department of Computer Sciences, University of Wisconsin-Madison, Madison, WI
@@ -531,7 +522,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">M.Eng.</h4>
+              <h4 class="h4 timeline-item-title">M.S.</h4>
 
               <span>September 2020 — March 2023</span>
 
@@ -543,7 +534,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">B.Eng.</h4>
+              <h4 class="h4 timeline-item-title">B.S.</h4>
 
               <span>August 2016 — June 2020</span>
 
@@ -553,24 +544,89 @@
 
             </li>
 
-            <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school</h4>
-
-              <span>September 2013 — June 2016</span>
-
-              <p class="timeline-text">
-                Changjun High School, Changsha, China
-              </p>
-
-            </li> -->
-
           </ol>
 
         </section>
 
-       
+        <section class="timeline">
 
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Industry</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Intern</h4>
+
+              <span>July 2024 — Present</span>
+
+              <p class="timeline-text">
+                Sea AI Lab, Singapore
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Analyst Intern</h4>
+
+              <span>May 2019 - August 2019</span>
+
+              <p class="timeline-text">
+                Kuaishou Technology Co., Ltd, Beijing, China
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+       
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Teaching</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">TA</h4>
+
+              <span>2024 Spring</span>
+
+              <p class="timeline-text">
+                Machine Learning (CS760), University of Wisconsin-Madison, Madison, WI
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">TA</h4>
+
+              <span>2023 Fall</span>
+
+              <p class="timeline-text">
+                Data Science Programming I (CS220), University of Wisconsin-Madison, Madison, WI
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
         <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -680,7 +736,7 @@
                 <div class="publication-content">
 
                   <div class="publication-meta">
-                    <p class="publication-category">Preprint</p>
+                    <p class="publication-category">ECCV 2024</p>
 
                     <span class="dot"></span>
 
@@ -699,34 +755,7 @@
               </a>
             </li>
 
-            <li class="publication-post-item">
-              <a href="https://link.springer.com/article/10.1007/s10994-023-06356-3" target="_blank" rel="noopener noreferrer">
-
-                <!-- <figure class="publication-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure> -->
-
-                <div class="publication-content">
-
-                  <div class="publication-meta">
-                    <p class="publication-category">Machine Learning</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2023-07-20">July, 2023</time>
-                  </div>
-
-                  <h3 class="h3 publication-item-title">Weighted Neural Tangent Kernel: A Generalized and
-                    Improved Network-Induced Kernel</h3>
-
-                  <p class="publication-text">
-                    Lei Tan, <strong>Shutong Wu</strong>, Wenxing Zhou, Xiaolin Huang
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
+            
 
             <li class="publication-post-item">
               <a href="https://arxiv.org/abs/2303.01507" target="_blank" rel="noopener noreferrer">
@@ -786,6 +815,30 @@
               </a>
             </li>
 
+            <li class="publication-post-item">
+              <a href="https://link.springer.com/article/10.1007/s10994-023-06356-3" target="_blank" rel="noopener noreferrer">
+
+                <div class="publication-content">
+
+                  <div class="publication-meta">
+                    <p class="publication-category">Machine Learning</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-07-20">July, 2023</time>
+                  </div>
+
+                  <h3 class="h3 publication-item-title">Weighted Neural Tangent Kernel: A Generalized and
+                    Improved Network-Induced Kernel</h3>
+
+                  <p class="publication-text">
+                    Lei Tan, <strong>Shutong Wu</strong>, Wenxing Zhou, Xiaolin Huang
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
             
 
           </ul>
@@ -1233,10 +1286,7 @@
         </header>
 
         <section class="mapbox" data-mapbox>
-          <!-- <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe> -->
+
           </figure>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.5847726549314!2d-89.40914622385375!3d43.07119987113562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8807accf4987c883%3A0x5c8312db7bc7df9!2sUniversity%20of%20Wisconsin%20-%20Madison%20Department%20of%20Computer%20Sciences!5e0!3m2!1szh-CN!2sus!4v1694382722920!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
