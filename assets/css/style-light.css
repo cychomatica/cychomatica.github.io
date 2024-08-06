@@ -1357,6 +1357,43 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
+@media (max-width: 450px) {
+
+  /**
+   * client
+   */
+
+  .clients-item { min-width: calc(33.33% - 10px); }
+  
+  .theme-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    padding: 15px 15px;
+  }
+  
+  .info-content .title {
+    color: var(--black-1);
+    background: var(--light-gray-1);
+    font-size: var(--fs-8);
+    font-weight: var(--fw-300);
+    width: 100%;
+    padding: 3px 12px;
+    border-radius: 8px;
+  }
+
+  .navbar-list { gap: 10px; }
+
+  /**
+   * #PORTFOLIO, BLOG 
+   */
+
+  .project-img,
+  .blog-banner-box { height: auto; }
+  .publication-banner-box { height: auto; }
+
+}
+
 /**
  * responsive larger than 450px screen
  */
